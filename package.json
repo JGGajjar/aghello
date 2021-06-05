@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "babel ./src -d ./lib",
     "aghello": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/JGGajjar/aghello/issues"
   },
-  "homepage": "https://github.com/JGGajjar/aghello#readme"
+  "homepage": "https://github.com/JGGajjar/aghello#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
 }
