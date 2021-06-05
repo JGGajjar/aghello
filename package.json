@@ -1,10 +1,24 @@
 {
-  "name": "ag-hello-world",
+  "name": "aghello",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
-    "aghello": "node ./src/index.js"
+    "aghello": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JGGajjar/aghello.git"
+  },
+  "keywords": [
+    "hello",
+    "ag"
+  ],
   "author": "Jay Gajjar <jaygajjar29@gmail.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JGGajjar/aghello/issues"
+  },
+  "homepage": "https://github.com/JGGajjar/aghello#readme"
 }
