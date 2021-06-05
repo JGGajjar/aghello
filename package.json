@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel ./src -d ./lib",
-    "lint": "eslint ./src/",
-    "aghello": "node ./src/index.js",
-    "prepublishOnly": "npm run build",
+    "aghello": "eslint ./src/ && babel ./src -d ./lib && node ./lib/index.js",
+    "prepublishOnly": "babel ./src -d ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
