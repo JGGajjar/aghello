@@ -1,0 +1,10 @@
+{
+  "name": "ag-hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "aghello": "node ./src/index.js"
+  },
+  "author": "Jay Gajjar <jaygajjar29@gmail.com>",
+  "license": "ISC"
+}
