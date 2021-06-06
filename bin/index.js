@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-const myLibrary = require("../lib/index.js");
+const myLibrary = require("../lib/index");
 
-myLibrary.sayHiTo("AG");
+myLibrary.sayHiTo("Ag");

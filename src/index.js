@@ -1,7 +1,5 @@
-function sayHiTo(name) {
+const sayHiTo = function sayHiTo(name) {
   return `Hi, ${name}`;
-}
+};
 
-const message = sayHiTo("Ag");
-
-console.log(message);
+exports.sayHiTo = sayHiTo;
