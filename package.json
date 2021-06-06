@@ -1,14 +1,25 @@
 {
   "name": "aghello",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "/src/index.js",
+  "bin": {
+    "aghello": "index.js"
+  },
   "directories": {
     "lib": "lib"
   },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  },
+  "devDependencies": {},
   "scripts": {
     "aghello": "eslint ./src/ && babel ./src -d ./lib && node ./lib/index.js",
-    "prepublishOnly": "babel ./src -d ./lib",
+    "prepublishOnly": "eslint ./src/ && babel ./src -d ./lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,12 +31,5 @@
   "bugs": {
     "url": "https://github.com/JGGajjar/aghello/issues"
   },
-  "homepage": "https://github.com/JGGajjar/aghello#readme",
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^7.28.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4"
-  }
+  "homepage": "https://github.com/JGGajjar/aghello#readme"
 }
