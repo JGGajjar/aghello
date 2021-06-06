@@ -2,7 +2,10 @@
   "name": "aghello",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "aghello": "eslint ./src/ && babel ./src -d ./lib && node ./lib/index.js",
     "prepublishOnly": "babel ./src -d ./lib",
@@ -12,17 +15,13 @@
     "type": "git",
     "url": "git+https://github.com/JGGajjar/aghello.git"
   },
-  "keywords": [
-    "hello",
-    "ag"
-  ],
   "author": "Jay Gajjar <jaygajjar29@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/JGGajjar/aghello/issues"
   },
   "homepage": "https://github.com/JGGajjar/aghello#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "eslint": "^7.28.0",
